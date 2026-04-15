@@ -170,3 +170,8 @@ body.gunther::before {
   background: radial-gradient(circle, rgba(120, 200, 255, 0.4), transparent 70%);
   opacity: 1;
 }
+
+/* ensures IG doesn't overflow weirdly */
+.instagram-media iframe {
+  width: 100% !important;
+}
