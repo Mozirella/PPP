@@ -1,33 +1,16 @@
-function getVideo(url, thumb) {
-  return `
-    <div class="video-preview" onclick="openVideo('${url}')">
-      <img src="${thumb}" class="video-thumb">
-      <div class="play-button">▶</div>
-    </div>
-  `;
-}
-
-function openVideo(url) {
-  const modal = document.getElementById("videoModal");
-  const frame = document.getElementById("videoFrame");
-
-  frame.src = url + "embed";
-  modal.style.display = "flex";
-}
-
-function closeVideo() {
-  document.getElementById("videoModal").style.display = "none";
-  document.getElementById("videoFrame").src = "";
-}
-
 function selectBuild(type, el) {
   const result = document.getElementById("result");
 
+  // remove active from all buttons
   document.querySelectorAll(".buttons button").forEach(btn => {
     btn.classList.remove("active");
   });
 
   el.classList.add("active");
+
+  // glow
+  document.body.classList.remove("rwb", "singer", "gunther");
+  document.body.classList.add(type);
 
   if (type === "rwb") {
     result.innerHTML = `
@@ -37,7 +20,13 @@ function selectBuild(type, el) {
       <h2>RWB</h2>
       <img src="assets/rwb.png" class="car">
       <p>Raw. Wide. Aggressive.</p>
-      ${getVideo("https://www.instagram.com/p/DWvokTCE2cL/", "assets/rwb.png")}
+
+      <div class="ig-wrapper">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/p/DWvokTCE2cL/"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
     `;
   }
 
@@ -49,7 +38,13 @@ function selectBuild(type, el) {
       <h2>Singer</h2>
       <img src="assets/singer.png" class="car">
       <p>Luxury. Precision. Reimagined.</p>
-      ${getVideo("https://www.instagram.com/p/C5lGS_tPKLI/", "assets/singer.png")}
+
+      <div class="ig-wrapper">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/p/C5lGS_tPKLI/"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
     `;
   }
 
@@ -61,7 +56,20 @@ function selectBuild(type, el) {
       <h2>Gunther Werks</h2>
       <img src="assets/guntherwerks.png" class="car">
       <p>Modern Performance. Carbon Precision.</p>
-      ${getVideo("https://www.instagram.com/p/DV185_8AdXF/", "assets/guntherwerks.png")}
+
+      <div class="ig-wrapper">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/p/DV185_8AdXF/"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
     `;
   }
+
+  // re-render instagram embeds
+  setTimeout(() => {
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  }, 100);
 }
