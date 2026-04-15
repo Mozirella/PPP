@@ -63,7 +63,7 @@ function selectBuild(type, el) {
     `;
   }
 
-  // 🔥 REQUIRED: render Instagram embeds
+  // render IG embeds
   if (window.instgrm) {
     window.instgrm.Embeds.process();
   }
