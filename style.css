@@ -127,3 +127,8 @@ p {
   transform: scale(1.1);
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.6));
 }
+
+.instagram-media {
+  margin: 20px auto !important;
+  border-radius: 12px !important;
+}
