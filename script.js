@@ -43,3 +43,9 @@ function selectBuild(type) {
     `;
   }
 }
+
+document.querySelectorAll(".buttons button").forEach(btn => {
+  btn.classList.remove("active");
+});
+
+event.target.classList.add("active");
