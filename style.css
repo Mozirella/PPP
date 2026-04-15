@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons button {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: white;
+  color: black;
+}
+
+/* RESULT */
+#result {
+  margin-top: 30px;
+  font-size: 20px;
+  transition: 0.3s;
+}
