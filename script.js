@@ -18,7 +18,9 @@ function selectBuild(type, el) {
       <img src="assets/rwb.png" class="car">
       <p>Raw. Wide. Aggressive.</p>
 
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DWvokTCE2cL/" data-instgrm-version="14"></blockquote>
+      <div class="ig-wrapper">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DWvokTCE2cL/" data-instgrm-version="14"></blockquote>
+      </div>
     `;
 
     document.body.style.background = `
@@ -36,7 +38,9 @@ function selectBuild(type, el) {
       <img src="assets/singer.png" class="car">
       <p>Luxury. Precision. Reimagined.</p>
 
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C5lGS_tPKLI/" data-instgrm-version="14"></blockquote>
+      <div class="ig-wrapper">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C5lGS_tPKLI/" data-instgrm-version="14"></blockquote>
+      </div>
     `;
 
     document.body.style.background = `
@@ -54,7 +58,9 @@ function selectBuild(type, el) {
       <img src="assets/guntherwerks.png" class="car">
       <p>Modern Performance. Carbon Precision.</p>
 
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DV185_8AdXF/" data-instgrm-version="14"></blockquote>
+      <div class="ig-wrapper">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DV185_8AdXF/" data-instgrm-version="14"></blockquote>
+      </div>
     `;
 
     document.body.style.background = `
