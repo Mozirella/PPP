@@ -12,11 +12,11 @@ function selectBuild(type, el) {
   if (type === "rwb") {
     result.innerHTML = `
       <a href="https://rwb.jp/" target="_blank">
-        <img src="rwblogo.png" class="logo">
+        <img src="assets/rwblogo.png" class="logo">
       </a>
       <h2>RWB</h2>
-      <img src="rwb.png" class="car">
-      <p>Raw. Wide. Aggressive.</p>
+      <img src="assets/rwb.png" class="car">
+      <p>Raul. Wide. Aggressive.</p>
     `;
 
     document.body.style.background = `
@@ -28,10 +28,10 @@ function selectBuild(type, el) {
   if (type === "singer") {
     result.innerHTML = `
       <a href="https://singervehicledesign.com/" target="_blank">
-        <img src="singerlogo.png" class="logo">
+        <img src="assets/singerlogo.png" class="logo">
       </a>
       <h2>Singer</h2>
-      <img src="singer.png" class="car">
+      <img src="assets/singer.png" class="car">
       <p>Luxury. Precision. Reimagined.</p>
     `;
 
@@ -44,10 +44,10 @@ function selectBuild(type, el) {
   if (type === "gunther") {
     result.innerHTML = `
       <a href="https://guntherwerks.com/" target="_blank">
-        <img src="guntherwerkslogo.png" class="logo">
+        <img src="assets/"guntherwerkslogo.png" class="logo">
       </a>
       <h2>Gunther Werks</h2>
-      <img src="guntherwerks.png" class="car">
+      <img src="assets/"guntherwerks.png" class="car">
       <p>Modern Performance. Carbon Precision.</p>
     `;
 
