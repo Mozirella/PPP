@@ -1,5 +1,13 @@
-function selectBuild(type) {
+function selectBuild(type, el) {
   const result = document.getElementById("result");
+
+  // remove active from all buttons
+  document.querySelectorAll(".buttons button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  // add active to clicked
+  el.classList.add("active");
 
   if (type === "rwb") {
     result.innerHTML = `
@@ -43,9 +51,3 @@ function selectBuild(type) {
     `;
   }
 }
-
-document.querySelectorAll(".buttons button").forEach(btn => {
-  btn.classList.remove("active");
-});
-
-event.target.classList.add("active");
