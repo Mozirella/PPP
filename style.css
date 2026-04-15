@@ -9,19 +9,16 @@ body {
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
     url('assets/background.png') center/cover no-repeat;
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
   transition: background 0.6s ease-in-out;
 }
 
-/* HERO */
+/* HERO (TRUE CENTER FIX) */
 .hero {
   text-align: center;
   max-width: 900px;
+  width: 100%;
   padding: 40px;
-  margin-top: 60px;
+  margin: 60px auto; /* 👈 THIS FIXES EVERYTHING */
 }
 
 /* TITLE */
@@ -38,7 +35,13 @@ p {
   margin-bottom: 30px;
 }
 
-/* buttons */
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .buttons button {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.25);
@@ -62,9 +65,9 @@ p {
   box-shadow: 0 0 20px rgba(255,255,255,0.5);
 }
 
-/* result card */
+/* RESULT CARD (HARD CENTER) */
 #result {
-  margin-top: 40px;
+  margin: 40px auto 0;
   padding: 30px;
   border-radius: 18px;
   background: rgba(20, 20, 20, 0.65);
@@ -77,12 +80,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  text-align: center;
 
+  gap: 12px;
   animation: fadeIn 0.4s ease;
 }
 
-/* logo */
+/* LOGO */
 .logo {
   width: 130px;
   cursor: pointer;
@@ -93,7 +97,7 @@ p {
   transform: scale(1.1);
 }
 
-/* car */
+/* CAR */
 .car {
   width: 420px;
   max-width: 100%;
@@ -105,11 +109,13 @@ p {
   transform: scale(1.05);
 }
 
-/* VIDEO PREVIEW */
+/* VIDEO */
 .video-preview {
   position: relative;
   cursor: pointer;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .video-thumb {
@@ -123,7 +129,7 @@ p {
   opacity: 1;
 }
 
-/* play button */
+/* PLAY BUTTON */
 .play-button {
   position: absolute;
   top: 50%;
@@ -135,7 +141,7 @@ p {
   border-radius: 50%;
 }
 
-/* modal */
+/* MODAL */
 .modal {
   position: fixed;
   top: 0;
@@ -154,7 +160,7 @@ p {
   border-radius: 12px;
 }
 
-/* animation */
+/* ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;
