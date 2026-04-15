@@ -17,7 +17,6 @@ function selectBuild(type, el) {
       <a href="https://rwb.jp/" target="_blank">
         <img src="assets/rwblogo.png" class="logo">
       </a>
-      <h2>RWB</h2>
       <img src="assets/rwb.png" class="car">
       <p>Raw. Wide. Aggressive.</p>
 
@@ -35,7 +34,6 @@ function selectBuild(type, el) {
       <a href="https://singervehicledesign.com/" target="_blank">
         <img src="assets/singerlogo.png" class="logo">
       </a>
-      <h2>Singer</h2>
       <img src="assets/singer.png" class="car">
       <p>Luxury. Precision. Reimagined.</p>
 
@@ -53,7 +51,6 @@ function selectBuild(type, el) {
       <a href="https://guntherwerks.com/" target="_blank">
         <img src="assets/guntherwerkslogo.png" class="logo">
       </a>
-      <h2>Gunther Werks</h2>
       <img src="assets/guntherwerks.png" class="car">
       <p>Modern Performance. Carbon Precision.</p>
 
