@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Porsche Build Experience</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,9 +15,9 @@
     <p>Select your driving philosophy.</p>
 
     <div class="buttons">
-      <button onclick="selectBuild('rwb')">RWB</button>
-      <button onclick="selectBuild('singer')">Singer</button>
-      <button onclick="selectBuild('gunther')">Gunther Werks</button>
+      <button onclick="selectBuild('rwb', this)">RWB</button>
+      <button onclick="selectBuild('singer', this)">Singer</button>
+      <button onclick="selectBuild('gunther', this)">Gunther Werks</button>
     </div>
 
     <div id="result"></div>
