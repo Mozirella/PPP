@@ -12,7 +12,7 @@ body {
   transition: background 0.6s ease-in-out;
 }
 
-/* HERO */
+/* hero */
 .hero {
   text-align: center;
   max-width: 900px;
@@ -21,7 +21,7 @@ body {
   margin: 60px auto;
 }
 
-/* TITLE */
+/* title */
 h1 {
   font-size: 60px;
   margin-bottom: 10px;
@@ -35,7 +35,7 @@ p {
   margin-bottom: 30px;
 }
 
-/* BUTTONS */
+/* buttons */
 .buttons {
   display: flex;
   justify-content: center;
@@ -65,7 +65,7 @@ p {
   box-shadow: 0 0 20px rgba(255,255,255,0.5);
 }
 
-/* RESULT CARD */
+/* result card */
 #result {
   margin: 40px auto 0;
   padding: 30px;
@@ -86,7 +86,7 @@ p {
   animation: fadeIn 0.4s ease;
 }
 
-/* LOGO */
+/* logo */
 .logo {
   width: 130px;
   cursor: pointer;
@@ -97,7 +97,7 @@ p {
   transform: scale(1.1);
 }
 
-/* CAR */
+/* car */
 .car {
   width: 420px;
   max-width: 100%;
@@ -109,7 +109,7 @@ p {
   transform: scale(1.05);
 }
 
-/* INSTAGRAM WRAPPER (CENTER FIX) */
+/* IG wrapper (center fix) */
 .ig-wrapper {
   width: 100%;
   display: flex;
@@ -117,7 +117,7 @@ p {
   margin-top: 25px;
 }
 
-/* INSTAGRAM EMBED (IMPORTANT) */
+/* IG embed */
 .instagram-media {
   margin: 0 auto !important;
   max-width: 380px !important;
@@ -125,7 +125,7 @@ p {
   border-radius: 12px !important;
 }
 
-/* FADE ANIMATION */
+/* fade anime */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -137,7 +137,7 @@ p {
   }
 }
 
-/* GLOW BASE */
+/* glow base */
 body::before {
   content: "";
   position: fixed;
@@ -153,25 +153,25 @@ body::before {
   transition: all 0.6s ease;
 }
 
-/* RWB RED */
+/* RWB red */
 body.rwb::before {
   background: radial-gradient(circle, rgba(255, 60, 60, 0.4), transparent 70%);
   opacity: 1;
 }
 
-/* SINGER ORANGE */
+/* singer orange */
 body.singer::before {
   background: radial-gradient(circle, rgba(255, 140, 60, 0.4), transparent 70%);
   opacity: 1;
 }
 
-/* GUNTHER BLUE */
+/* gunther bb */
 body.gunther::before {
   background: radial-gradient(circle, rgba(120, 200, 255, 0.4), transparent 70%);
   opacity: 1;
 }
 
-/* ensures IG doesn't overflow weirdly */
+/* makes sure IG doesn't overflow weirdly */
 .instagram-media iframe {
   width: 100% !important;
 }
