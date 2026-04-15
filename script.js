@@ -21,13 +21,11 @@ function selectBuild(type) {
     document.body.style.background = "#1a1a1a";
   }
 
-  if (type === "gunther") {
-    result.innerHTML = `
-      <img src="guntherwerkslogo.jpg" class="logo">
-      <h2>Gunther Werks</h2>
-      <img src="guntherwerks.png" class="car">
-      <p>Modern Performance. Heritage DNA.</p>
-    `;
-    document.body.style.background = "#111";
-  }
+if (type === "gunther") {
+  result.innerHTML = `
+    <img src="guntherwerkslogo.jpg" class="logo">
+    <h2>Gunther Werks</h2>
+    <img src="guntherwerks.png" class="car">
+    <p>Modern Performance. Carbon Precision.</p>
+  `;
 }
