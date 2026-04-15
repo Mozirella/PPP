@@ -11,6 +11,7 @@ function selectBuild(type, el) {
 
   if (type === "rwb") {
     result.innerHTML = `
+      <a href="https://rwb.jp/" target="_blank">
       <img src="rwblogo.png" class="logo">
       <h2>RWB</h2>
       <img src="rwb.png" class="car">
@@ -24,6 +25,7 @@ function selectBuild(type, el) {
   }
 
   if (type === "singer") {
+      <a href="https://singervehicledesign.com/" target="_blank">
     result.innerHTML = `
       <img src="singerlogo.png" class="logo">
       <h2>Singer</h2>
@@ -39,6 +41,7 @@ function selectBuild(type, el) {
 
   if (type === "gunther") {
     result.innerHTML = `
+      <a href="https://guntherwerks.com/" target="_blank">
       <img src="guntherwerkslogo.png" class="logo">
       <h2>Gunther Werks</h2>
       <img src="guntherwerks.png" class="car">
