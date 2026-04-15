@@ -66,7 +66,7 @@ function selectBuild(type, el) {
     `;
   }
 
-  // ✅ STRONGER IG RENDER FIX
+  // render fix IG
   setTimeout(() => {
     if (window.instgrm && window.instgrm.Embeds) {
       window.instgrm.Embeds.process();
