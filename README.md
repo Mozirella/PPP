@@ -26,6 +26,10 @@ Users can select between RWB, Singer, and Gunther Werks builds. Based on the sel
 
 This project was created to practice frontend development, focusing on UI interaction, layout, and creating a more engaging user experience.
 
+## Fun Fact
+
+All the vehicles featured in the Instagram videos are located in somewhere in Japan. 🎌
+
 ## Live Demo
 
 https://mozirella.github.io/PPP/
