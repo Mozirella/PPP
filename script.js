@@ -39,7 +39,7 @@ function selectBuild(type, el) {
 
   if (type === "gunther") {
     result.innerHTML = `
-      <img src="guntherwerkslogo.jpg" class="logo">
+      <img src="guntherwerkslogo.png" class="logo">
       <h2>Gunther Werks</h2>
       <img src="guntherwerks.png" class="car">
       <p>Modern Performance. Carbon Precision.</p>
