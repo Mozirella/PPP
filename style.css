@@ -2,8 +2,8 @@ body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
   color: white;
-  min-height: 100vh; /* 👈 change from height */
-  overflow-x: hidden; /* 👈 allow vertical scroll */
+  min-height: 100vh;
+  overflow-x: hidden;
 
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
@@ -11,21 +11,21 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* 👈 important */
-  
+  align-items: flex-start;
+
   transition: background 0.6s ease-in-out;
 }
 
-/* HERO CONTAINER */
+/* hero */
 .hero {
   text-align: center;
   max-width: 900px;
   padding: 40px;
-  margin-top: 60px; /* 👈 add space */
+  margin-top: 60px;
   backdrop-filter: blur(8px);
 }
 
-/* TITLE */
+/* title */
 h1 {
   font-size: 60px;
   margin-bottom: 10px;
@@ -39,7 +39,7 @@ p {
   margin-bottom: 30px;
 }
 
-/* BUTTONS */
+/* button */
 .buttons button {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.25);
@@ -61,14 +61,14 @@ p {
   box-shadow: 0 10px 25px rgba(255,255,255,0.2);
 }
 
-/* ACTIVE BUTTON */
+/* active */
 .buttons button.active {
   background: white;
   color: black;
   box-shadow: 0 0 25px rgba(255,255,255,0.6);
 }
 
-/* RESULT CARD */
+/* result card */
 #result {
   margin-top: 40px;
   padding: 30px;
@@ -79,34 +79,45 @@ p {
   animation: fadeIn 0.5s ease-in-out;
 
   max-width: 500px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-/* RESULT TITLE */
+/* result title */
 #result h2 {
-  margin-top: 10px;
+  margin: 10px 0;
   letter-spacing: 2px;
 }
 
-/* LOGO */
+/* result */
+#result p {
+  margin-bottom: 20px;
+}
+
+/* logo */
 .logo {
   width: 130px;
   margin-bottom: 10px;
   opacity: 0.95;
+  cursor: pointer;
+  transition: 0.3s;
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
 }
 
-/* CAR IMAGE */
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.6));
+}
+
+/* car asset */
 .car {
   width: 440px;
   margin: 20px 0;
   border-radius: 14px;
   transition: all 0.4s ease;
-
   filter: drop-shadow(0 40px 60px rgba(0,0,0,0.9));
 }
 
@@ -114,7 +125,30 @@ p {
   transform: scale(1.06);
 }
 
-/* FADE ANIMATION */
+/* video */
+.video-preview {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IG wrap */
+.ig-wrapper {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+/* IG embed */
+.instagram-media {
+  margin: 0 auto !important;
+  max-width: 400px !important;
+  width: 100% !important;
+  border-radius: 12px !important;
+}
+
+/* fade */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -124,48 +158,4 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.logo {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 10px rgba(255,255,255,0.6));
-}
-
-.instagram-media {
-  margin: 30px auto !important;
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-/* IG wrapper */
-.ig-wrapper {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-}
-
-/* IG embed fix */
-.instagram-media {
-  margin: 0 auto !important;
-  max-width: 400px !important; /* 👈 keeps it clean + not oversized */
-  width: 100% !important;
-  border-radius: 12px !important;
-}
-
-/* result card adapt */
-#result {
-  margin-top: 40px;
-  padding: 30px;
-  border-radius: 18px;
-  background: rgba(20, 20, 20, 0.65);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.8);
-  animation: fadeIn 0.5s ease-in-out;
-
-  max-width: 500px; /* 👈 prevents stretching */
 }
